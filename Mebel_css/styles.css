@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background: #F4FBF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирование по вертикали */
+}
+
+.Container {
+    text-align: center; /* Центрирование текста */
+}
+
+.Mebelshop {
+    color: #006B5F;
+    font-size: 57px;
+    margin-bottom: 40px; /* Отступ снизу */
+}
+
+.RegistrationForm, .LoginForm {
+    width: 300px; /* Ширина формы */
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Title {
+    color: #4A635E;
+    font-size: 28px;
+}
+
+.TextContentSubtitle {
+    text-align: center; /* Центрирование текста */
+}
+
+.underline {
+    text-decoration: underline;
+    cursor: pointer; /* Курсор в виде указателя */
+}
+
+.Divider {
+    width: 250px;
+    height: 1px;
+    background-color: #6F7976;
+    margin: 20px auto; /* Центрирование делителя */
+}
+
+.FormContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputField {
+    margin-bottom: 16px; /* Отступ между полями */
+}
+
+.Label {
+    color: #4A635E; 
+}
+
+.InputContainer {
+   position: relative; /* Для размещения иконки глаза */
+}
+
+.Input {
+   padding-left: 16px; 
+   padding-right: 16px; 
+   padding-top: 12px; 
+   padding-bottom: 12px; 
+   background-color: #EFF5F2; /* Цвет фона поля ввода */
+   border-radius: 16px; 
+   margin-top: 8px; /* Отступ между меткой и полем ввода */
+   width: calc(100% - 32px); /* Ширина поля ввода с учетом отступов */
+   border: 1px solid #BEC9C5; /* Цвет границы поля ввода */
+}
+
+.Error {
+   color: #BA1A1A; 
+   font-size: 12px; 
+   display: none; /* Скрыть ошибку по умолчанию */
+}
+
+.Button {
+   width: 220px; 
+   height: 40px; 
+   background-color: #006B5F; 
+   border-radius: 100px; 
+   color:white; 
+   font-size:16px; 
+   cursor:pointer; 
+   transition:.3s ease-in-out;
+   margin-top: 20px; /* Отступ сверху */
+   align-self: center; /* Центрирование кнопки */
+}
+.Button:hover {
+   background-color:#005B4F
+}
+
+.Eye {
+   position: absolute;
+   right: 10px;
+   top: 12px;
+   cursor: pointer; /* Курсор в виде указателя для глазика */
+}

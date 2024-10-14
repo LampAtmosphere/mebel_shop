@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MebelShop - Регистрация/Авторизация</title>
+    <link rel="stylesheet" href="C:\Users\datch\Desktop\Проекты\mebel_shop\Mebel_css\styles.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="Mebelshop">MebelShop</div>
+
+        <div class="RegistrationForm" id="registrationForm">
+            <div class="TextContentTitle">
+                <div class="Title">Зарегистрируйтесь</div>
+            </div>
+            <div class="TextContentSubtitle">
+                <span>Уже зарегистрированы? </span><span class="underline" id="switchToLogin">Войти</span>
+            </div>
+            <div class="Divider"></div>
+
+            <div class="FormContact">
+                <div class="InputField">
+                    <label class="Label">Email</label>
+                    <input type="email" class="Input" placeholder="Введите почту">
+                    <div class="Error">Email не зарегистрирован</div>
+                </div>
+
+                <div class="InputField">
+                    <label class="Label">Пароль</label>
+                    <div class="InputContainer">
+                        <input type="password" class="Input" placeholder="Пароль" id="passwordField1">
+                        <span class="Eye" id="togglePassword1">0</span>
+                    </div>
+                </div>
+
+                <div class="InputField">
+                    <label class="Label">Повторите пароль</label>
+                    <div class="InputContainer">
+                        <input type="password" class="Input" placeholder="Пароль" id="passwordField2">
+                        <span class="Eye" id="togglePassword2">0</span>
+                    </div>
+                </div>
+
+                <button class="Button">Регистрация</button>
+            </div>
+        </div>
+
+        <div class="LoginForm" id="loginForm" style="display: none;">
+            <div class="TextContentTitle">
+                <div class="Title">Вход</div>
+            </div>
+            <div class="TextContentSubtitle">
+                <span>Нет аккаунта? </span><span class="underline" id="switchToRegister">Регистрация</span>
+            </div>
+            <div class="Divider"></div>
+
+            <div class="FormContact">
+                <div class="InputField">
+                    <label class="Label">Email</label>
+                    <input type="email" class="Input" placeholder="email@f.com">
+                </div>
+
+                <div class="InputField">
+                    <label class="Label">Пароль</label>
+                    <input type="password" class="Input" placeholder="Пароль">
+                </div>
+
+                <button class="Button">Войти</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="C:\Users\datch\Desktop\Проекты\mebel_shop\Mebel_js\script.js"></script>
+</body>
+</html>
