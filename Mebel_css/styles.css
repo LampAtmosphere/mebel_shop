@@ -1,48 +1,7 @@
-/*Цвета)*/
-:root {
-    /* Цвета для светлой темы */
-    --md-sys-color-background: #F4FBF8; /* Цвет фона светлой темы */
-    --md-sys-color-surface: white; /* Цвет поверхности светлой темы */
-    --md-sys-color-primary: #006B5F; /* Основной цвет */
-    --md-sys-color-on-surface: #4A635E; /* Цвет текста на поверхности */
-    --md-sys-color-outline: #BEC9C5; /* Цвет границы */
-}
-
-.dark {
-    --md-sys-color-background: rgb(14, 21, 19); /* Цвет фона темной темы */
-    --md-sys-color-surface: rgb(20, 51, 73); /* Цвет поверхности в темной теме */
-    --md-sys-color-primary: rgb(130, 213, 199); /* Основной цвет */
-    --md-sys-color-on-surface: rgb(221, 228, 225); /* Цвет текста на поверхности в темной теме */
-    --md-sys-color-outline: rgb(137, 147, 144); /* Цвет границы в темной теме */
-    --md-sys-color-pole_vvoda: #1A211F;
-
-    --md-sys-color-on-primary: rgb(0, 55, 49); /* Цвет текста на основном цвете */
-    --md-sys-color-primary-container: rgb(0, 80, 71); /* Контейнер для основного цвета */
-    --md-sys-color-on-primary-container: rgb(158, 242, 227); /* Текст на контейнере основного цвета */
-
-    --md-sys-color-secondary: rgb(177, 204, 198); /* Вторичный цвет */
-    --md-sys-color-on-secondary: rgb(28, 53, 48); /* Текст на вторичном цвете */
-    --md-sys-color-secondary-container: rgb(51, 75, 71); /* Контейнер для вторичного цвета */
-    --md-sys-color-on-secondary-container: rgb(204, 232, 226); /* Текст на контейнере вторичного цвета */
-
-    --md-sys-color-tertiary: rgb(172, 202, 229); /* Третичный цвет */
-    --md-sys-color-on-tertiary: rgb(20, 51, 73); /* Текст на третичном цвете */
-    --md-sys-color-tertiary-container: rgb(45, 74, 96); /* Контейнер для третичного цвета */
-    --md-sys-color-on-tertiary-container: rgb(203, 230, 255); /* Текст на контейнере третичного цвета */
-
-    --md-sys-color-error: rgb(255, 180, 171); /* Цвет ошибки */
-    --md-sys-color-on-error: rgb(105, 0, 5); /* Текст на ошибке */
-    --md-sys-color-error-container: rgb(147, 0, 10); /* Контейнер для ошибки */
-    --md-sys-color-on-error-container: rgb(255, 218, 214); /* Текст на контейнере ошибки */
-
-    --md-sys-color-outline-variant: rgb(63, 73, 70);
-}
-
-/*Основа)*/
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    background: var(--md-sys-color-background, #F4FBF8); /* Цвет фона светлой темы */
+    background: var(--md-sys-color-background, #BEC9C5); /* Цвет фона светлой темы */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,13 +35,13 @@ body {
 .RegistrationForm, .LoginForm {
     width: 300px; /* Ширина формы */
     padding: 20px;
-    background: var(--md-sys-color-surface, white); /* Цвет фона формы */
+    background: var(--md-sys-color-surface, #143349); /* Цвет фона формы */
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .Title {
-    color: var(--md-sys-color-on-surface, #4A635E);
+    color: var(--md-sys-color-on-surface);
     font-size: 28px;
 }
 
@@ -97,7 +56,7 @@ body {
 .Divider {
     width: 250px;
     height: 1px;
-    background-color: var(--md-sys-color-outline, #6F7976);
+    background-color: var(--md-sys-color-outline);
     margin: 20px auto; /* Центрирование делителя */
 }
 
@@ -111,7 +70,7 @@ body {
 }
 
 .Label {
-    color: var(--md-sys-color-on-surface, #4A635E); 
+    color: var(--md-sys-color-on-surface); 
 }
 
 .InputContainer {
@@ -119,16 +78,16 @@ body {
 }
 
 .Input {
-   padding-left: 16px; 
-   padding-right: 16px; 
-   padding-top: 12px; 
-   padding-bottom: 12px; 
-   background-color: var(--md-sys-color-surface-variant, #EFF5F2); /* Цвет фона поля ввода */
-   border-radius: 16px; 
-   margin-top: 8px; /* Отступ между меткой и полем ввода */
-   width: calc(100% - 32px); /* Ширина поля ввода с учетом отступов */
-   border: 1px solid var(--md-sys-color-outline-variant, #BEC9C5); /* Цвет границы поля ввода */
-}
+    padding-left: 16px; 
+    padding-right: 16px; 
+    padding-top: 12px; 
+    padding-bottom: 12px; 
+    background-color: var(--md-sys-color-input-background); /* Цвет фона поля ввода */
+    border-radius: 16px; 
+    margin-top: 8px; /* Отступ между меткой и полем ввода */
+    width: calc(100% - 32px); /* Ширина поля ввода с учетом отступов */
+    border: 1px solid var(--md-sys-color-outline); /* Цвет границы поля ввода */
+ }
 
 /* Позиционирование глазиков внутри поля ввода */
 .Eye {
@@ -159,10 +118,10 @@ body {
    align-self: center; /* Центрирование кнопки */
 }
 .Button:hover {
-   background-color:#005B4F
-}
+    background-color:#005B4F
+ }
 
-/* Темная тема */
+/* Темная тема стилизация для форм и элементов интерфейса */
 body.dark {
     background-color : var(--md-sys-color-background);/* Цвет фона темной темы */ 
 }
@@ -170,12 +129,37 @@ body.dark {
     color : var(--md-sys-color-primary);/* Цвет текста в темной теме */ 
 }
 .RegistrationForm.dark,
-.LoginForm.dark {
+.LoginForm.dark,
+.ResetPasswordForm.dark,
+.ConfirmEmailForm.dark,
+.TextContentSubtitle.dark {
     background-color : var(--md-sys-color-surface);/* Цвет фона формы в темной теме */ 
 }
-.Input.dark {
-    background-color : var(--md-sys-color-pole_vvoda);/* Цвет фона поля ввода в темной теме */ 
+.NewPasswordForm.dark {
+    background-color : var(--md-sys-color-on-surface);/* Цвет фона формы в темной теме */ 
 }
-.TextContentSubtitle.dark{
-    color: var(--md-sys-color-on-surface);
+.Input.dark {
+    background : var(--md-sys-color-input-background);/* Цвет фона поля ввода в темной теме */ 
+}
+
+/* Цвета */
+:root {
+    /* Цвета для светлой темы */
+    --md-sys-color-background: #F4FBF8; /* Цвет фона светлой темы */
+    --md-sys-color-surface: white; /* Цвет поверхности светлой темы */
+    --md-sys-color-primary: #006B5F; /* Основной цвет */
+    --md-sys-color-on-surface: #4A635E; /* Цвет текста на поверхности */
+    --md-sys-color-outline: #BEC9C5; /* Цвет границы */
+    --md-sys-color-input-background: #E9EFEC; /* Цвет фона полей ввода в светлой теме */
+}
+
+.dark {
+    --md-sys-color-background: rgb(14, 21, 19); /* Цвет фона темной темы */
+    --md-sys-color-surface: rgb(20, 51, 73); /* Цвет поверхности в темной теме */
+    --md-sys-color-primary: rgb(130, 213, 199); /* Основной цвет */
+    --md-sys-color-on-surface: rgb(221, 228, 225); /* Цвет текста на поверхности в темной теме */
+    --md-sys-color-outline: rgb(137, 147, 144); /* Цвет границы в темной теме */
+    --md-sys-color-input-background: #1A211F; /* Цвет фона полей ввода в темной теме */
+
+    --md-sys-color-on-primary: rgb(0, 55, 49); /* Цвет текста на основном цвете */
 }

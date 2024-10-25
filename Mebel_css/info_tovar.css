@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #EFF5F2;
+}
+
+.header {
+    width: 100%;
+    padding: 8px;
+    background: #F4FBF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #006B5F;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu-item {
+    color: #161D1B;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    padding: 40px 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Добавьте свои стили по необходимости */

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #EFF5F2;
+}
+
+.header {
+    width: 100%;
+    padding: 8px;
+    background: #F4FBF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #006B5F;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu-item {
+    color: #161D1B;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    background: #1D1B20;
+}
+
+.content {
+    width: 100%;
+    padding: 40px 100px;
+    border-radius: 16px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+h2 {
+    color: #161D1B;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.filter {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-item {
+    color: #006B5F;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #006B5F;
+    padding: 8px;
+}
+
+.products-list {
+    align-self: stretch;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #DDE4E1;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 150px; /* Ширина товара */
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+    height: 150px;
+}
+
+.product-info {
+    color: #161D1B;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product-price {
+    color: #161D1B;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: #456179;
+    color: white;
+    cursor: pointer;
+}

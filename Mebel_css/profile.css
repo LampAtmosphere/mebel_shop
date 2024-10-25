@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #EFF5F2;
+}
+
+.header {
+    width: 100%; /* Ширина шапки на всю страницу */
+    padding: 16px 20px; /* Отступы для шапки */
+    background: #F4FBF8; /* Фоновый цвет шапки */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: #006B5F;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+}
+
+.menu-item {
+    color: #161D1B;
+    font-size: 24px;
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    background: #1D1B20;
+}
+
+.container {
+    max-width: 800px; /* Ограничиваем ширину контейнера */
+    margin: 20px auto; /* Центрируем контейнер с верхним отступом */
+    padding: 20px; /* Добавляем отступы */
+    background: #FFFFFF; /* Фоновый цвет контейнера */
+    border-radius: 8px; /* Скругляем углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.form-title {
+    font-size: 20px;
+    margin-bottom: 10px; /* Отступ снизу */
+    color: #161D1B;
+}
+
+.label {
+    font-size: 14px;
+    margin: 10px 0 5px; /* Отступы для меток */
+    color: #161D1B;
+}
+
+.input-field {
+    width: 100%; /* Полная ширина для полей ввода */
+    padding: 10px; /* Отступ внутри полей */
+    border: 1px solid #CCC; /* Рамка полей */
+    border-radius: 4px; /* Скругленные углы */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end; /* Выравниваем кнопки вправо */
+    gap: 15px; /* Отступ между кнопками */
+}
+
+.button {
+    padding: 10px 15px; /* Отступ внутри кнопок */
+    border: none; /* Убираем рамку */
+    border-radius: 4px; /* Скругленные углы */
+    color: white; /* Цвет текста на кнопках */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.button.cancel {
+    background-color: #A9A9A9; /* Цвет кнопки "Назад" */
+}
+
+.button.save {
+    background-color: #006B5F; /* Цвет кнопки "Редактировать профиль" */
+}

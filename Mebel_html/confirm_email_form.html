@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MebelShop - Подтверждение почты</title>
+    <link rel="stylesheet" a href="../Mebel_css/styles.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="Mebelshop">MebelShop</div>
+        <div class="ThemeToggle" id="themeToggle">🌙</div> <!-- Кнопка переключения темы -->
+
+ <!-- Форма подтверждения email -->
+ <div id='confirmEmailForm' style='display:none;width: 396px;padding-top :20 px ; padding-bottom :40 px ; background:white ; border-radius :16 px ; overflow:hidden ; flex-direction :column ; justify-content:center ; align-items:center ; gap :10 px ;'>
+    <!-- Заголовок формы подтверждения email -->
+    <h2 style='text-align:center;color:#161D1B;font-size :28 px ;'>Подтверждение email</h2>
+
+    <!-- Ввод кода подтверждения -->
+    <p>Введите код из письма:</p> 
+    <input type='text' maxlength='4' placeholder='Код' /> 
+    
+    <!-- Кнопка проверки кода -->
+    <button id='checkCode' class='Button'>Проверить код</button> 
+    
+    <!-- Ссылка для повторной отправки кода -->
+    <p><span style='cursor:pointer;color:#006B5F;' id='resendCode'>Повторно запросить код через 10 сек.</span></p> 
+</div>
+
+    <script a src='../Mebel_js/script.js'></script>
+</body>
+</html>
