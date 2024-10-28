@@ -6,9 +6,9 @@ body {
 }
 
 .header {
-    width: 100%; /* Ширина шапки на всю страницу */
-    padding: 16px 20px; /* Отступы для шапки */
-    background: #F4FBF8; /* Фоновый цвет шапки */
+    width: 100%;
+    padding: 8px;
+    background: #F4FBF8;
     display: flex;
     justify-content: space-between;
     align-items: center;
