@@ -22,20 +22,17 @@ body {
 
 .menu {
     display: flex;
-    gap: 16px;
+    justify-content: center; /* Центрируем элементы меню */
+    width: 100%; /* Ширина меню 100% */
 }
 
 .menu-item {
     color: #161D1B;
     font-size: 24px;
-    cursor: pointer; /* Указатель при наведении */
+    cursor: pointer;
+    padding-right: 150px;
 }
 
-.logo {
-    width: 32px;
-    height: 32px;
-    background: #1D1B20;
-}
 
 .container {
     max-width: 800px; /* Ограничиваем ширину контейнера */

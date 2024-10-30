@@ -5,40 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MebelShop - Вход</title>
     <link rel="stylesheet" href="../Mebel_css/styles.css">
+    <style>
+        /* Стили для попапов */
+        .popup-container {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .popup-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Основной контейнер страницы -->
     <div class="Container">
+        <!-- Заголовок приложения -->
         <div class="Mebelshop">MebelShop</div>
-        <div class="ThemeToggle" id="themeToggle">🌙</div> <!-- Кнопка переключения темы -->
+        
+        <!-- Кнопка переключения темы -->
+        <div class="ThemeToggle" id="themeToggle">🌙</div>
 
         <!-- Форма входа -->
         <form class="LoginForm" id="loginForm">
+            <!-- Заголовок формы -->
             <div class="TextContentTitle">
                 <div class="Title">Вход</div>
             </div>
+            
+            <!-- Подзаголовок и ссылка на регистрацию -->
             <div class="TextContentSubtitle">
                 <span>Нет аккаунта? </span><span class='underline' id='switchToRegister'>Регистрация</span>
             </div>
+            
+            <!-- Разделитель -->
             <div class='Divider'></div>
 
+            <!-- Поле ввода email и пароль -->
             <div class='FormContact'>
                 <div class='InputField'>
                     <label class='Label'>Email</label>
-                    <input type='email' class='Input' placeholder='Введите email'>
+                    <input type='email' class='Input' placeholder='Введите email'/>
                 </div>
 
                 <div class='InputField'>
                     <label class='Label'>Пароль</label>
-                    <input type='password' class='Input' placeholder='Введите пароль'>
+                    <input type='password' class='Input' placeholder='Введите пароль'/>
                 </div>
 
-                <!-- Добавление текста "Забыли пароль?" -->
+                <!-- Кнопка восстановления пароля -->
                 <p><span style='cursor:pointer;color:#006B5F;' id='forgotPassword'>Забыли пароль? Восстановить</span></p> 
                 
-                <!-- Измененный текст на кнопке -->
+                <!-- Кнопка входа -->
                 <button class='Button'>Войти в аккаунт</button> 
             </div>
         </form>
+
+        <!-- Попап для восстановления пароля -->
+        <div id="resetPasswordPopup" class="popup-container">
+            <div class="popup-content">
+                <img src="../resources/35bdaa56-8bf5-4547-9e84-f3391080181a.png" alt="Icon"
+                     style="width: 32px; height: 32px; position: relative; left: 50%; transform: translateX(-50%); margin-bottom: 20px;">
+                <h2>Восстановить пароль</h2>
+                <div class='InputField'>
+                    <label class='Label'>Email</label>
+                    <input type='email' class='Input' placeholder='Введите email'/>
+                </div>
+                <button id='sendResetLink' class='Button'>Сбросить пароль</button>
+            </div>
+        </div>
+        
+        <!-- Попап для подтверждения email -->
+        <div id="emailConfirmationPopup" class="popup-container">
+            <div class="popup-content">
+                <h2>Подтверждение email</h2>
+                <p>Введите код из письма:</p> 
+                <input type='text' id='confirmationCode' class='Input' maxlength='4' placeholder='Код' /> 
+                <button id='checkCode' class='Button'>Проверить код</button> 
+                <p><span style='cursor:pointer;color:#006B5F;' id='resendCode'>Повторно запросить код через 10 сек.</span></p> 
+            </div>
+        </div>
+
+        <!-- Попап для установки нового пароля -->
+        <div id="newPasswordPopup" class="popup-container">
+            <div class="popup-content">
+                <h2>Новый пароль</h2>
+                <div class="InputField">
+                    <label class='Label'>Введите новый пароль:</label>
+                    <input type="password" class="Input" placeholder="Новый пароль"/>
+                </div>
+                <div class="InputField">
+                    <label for="confirmPassword" class='Label'>Повторите новый пароль:</label>
+                    <input type="password" class="Input" placeholder="Повторите пароль"/>
+                </div>
+                <button id="setNewPassword" class='Button'>Установить новый пароль</button>
+            </div>
+        </div>
     </div>
 
     <script src="../Mebel_js/login.js"></script>

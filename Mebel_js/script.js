@@ -22,13 +22,15 @@ class FormManager {
         }
     }
  
-    toggleTheme() {
-        if (this.themeToggle) {
-            if (this.themeToggle.textContent === '🌙') {
-                this.themeToggle.textContent = '☀️';
-            } else {
-                this.themeToggle.textContent = '🌙';
-            }
+    toggleTheme(themeToggle) {
+        // Переключаем класс темной темы
+        document.body.classList.toggle('dark');
+
+        // Изменяем значок в зависимости от темы
+        if (document.body.classList.contains('dark')) {
+            themeToggle.textContent = '🌞'; // Значок для светлой темы
+        } else {
+            themeToggle.textContent = '🌙'; // Значок для темной темы
         }
     }
 }

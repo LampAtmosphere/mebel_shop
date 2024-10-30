@@ -22,20 +22,15 @@ body {
 
 .menu {
     display: flex;
-    gap: 16px;
+    justify-content: center; /* Центрируем элементы меню */
+    width: 100%; /* Ширина меню 100% */
 }
 
 .menu-item {
     color: #161D1B;
     font-size: 24px;
-    line-height: 32px;
-    cursor: pointer; /* Указатель при наведении */
-}
-
-.logo {
-    width: 32px;
-    height: 32px;
-    background: #1D1B20;
+    cursor: pointer;
+    padding-right: 150px;
 }
 
 .content {

@@ -23,24 +23,27 @@ body {
 
 .menu {
     display: flex;
-    gap: 16px;
+    justify-content: center; /* Центрируем элементы меню */
+    width: 100%; /* Ширина меню 100% */
 }
 
 .menu-item {
     color: #161D1B;
     font-size: 24px;
-    line-height: 32px;
     cursor: pointer;
+    padding-right: 150px;
 }
 
 .content {
+    justify-content: center; /* По вертикали центрируем контейнер */
     width: 100%;
-    padding: 40px 100px;
+    padding: 40px 20px; /* Уменьшите отступы, если необходимо */
     background: white;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; /* Центрируем элементы по горизонтали */
     gap: 10px;
 }
+
 
 /* Добавьте свои стили по необходимости */
